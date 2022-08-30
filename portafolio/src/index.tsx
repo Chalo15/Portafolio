@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./Navbar";
+import HomeBody from "./HomeBody";
 
 
 const root = ReactDOM.createRoot(
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Navbar />
+    <HomeBody/>
   </React.StrictMode>
 );
 
