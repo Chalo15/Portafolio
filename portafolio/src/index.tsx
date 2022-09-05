@@ -5,17 +5,22 @@ import reportWebVitals from "./reportWebVitals";
 import Navbar from "./Navbar";
 import HomeBody from "./HomeBody";
 import Footer from "./Footer";
-
-
+import Projects from './Projects'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <HomeBody/>
-    <Footer/>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomeBody />} />
+        <Route path="/projects" element={ <Projects />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
