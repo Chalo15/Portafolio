@@ -4,6 +4,8 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./Navbar";
 import HomeBody from "./HomeBody";
+import Footer from "./Footer";
+
 
 
 const root = ReactDOM.createRoot(
@@ -13,6 +15,7 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <HomeBody/>
+    <Footer/>
   </React.StrictMode>
 );
 

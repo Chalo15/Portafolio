@@ -1,12 +1,12 @@
 import Avatar from "@mui/material/Avatar";
-
+import photo from './img/photo.jpg'
 function Navbar() {
   return (
     <div className=" py-7 bg-[#31706F] text-center shadow-lg opacity-85 ">
       <ul>
-        {/* <div className=''>
-        <Avatar src="/public/photo."/>
-        </div> */}
+         
+          <Avatar src={photo} sx={{width:70, height:70}}/>
+
         <a
           className="px-5 py-2 mx-3 rounded-md bg-[#4CADAC]  hover:bg-[#53BDBB]"
           href="index.tsx"
